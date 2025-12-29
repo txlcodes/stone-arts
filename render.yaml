@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: stonearts-webshop
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+
